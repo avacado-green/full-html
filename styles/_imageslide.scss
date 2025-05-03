@@ -1,0 +1,49 @@
+.image_slide {
+    width: $totalWidth;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 11px;
+    padding-bottom: 42px;
+    background-color: $contentColor3;
+
+    &_img {
+        margin-left: 23px;
+    }
+}
+
+@media (max-width: 1599px) and (min-width: 768px) {
+
+    .image_slide {
+
+        width: $totalTabletWidth;
+        margin: 0px auto;
+        padding-top: 28px;
+        padding-bottom: 42px;
+    
+        &_img {
+            margin-left: 0px;
+            width: 466px;
+            height: 565px;
+        }
+    }
+
+}
+
+@media (max-width: 767px) and (min-width: 375px) {
+
+    .image_slide {
+
+        width: $totalPhoneWidth;
+        margin: 0px auto;
+        padding-top: 86px;
+        padding-bottom: 84px;
+    
+        &_img {
+            margin-left: 0px;
+            width: 374px;
+            height: 454px;
+        }
+    }
+
+}

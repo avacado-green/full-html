@@ -1,0 +1,92 @@
+.breadcrumb {
+    width: $totalWidth;
+    margin: 0px auto;
+    background-color: $contentColor3;
+    display: flex;
+    justify-content: space-between;
+
+    &_left_title {
+        padding-top: 59px;
+        padding-left: 230px;
+        padding-bottom: 60px;
+        color: $contentColor1;
+        @include Lato400n(24px);
+    }
+    
+    &_right_title {
+        padding-top: 65px;
+        padding-right: 235px;
+        padding-bottom: 66px;
+        color: $contentColor7;
+        letter-spacing: 0.2px;
+        @include Lato300n(14px);
+
+        &_span {
+            color: $contentColor1;
+            letter-spacing: 0.2px;
+            @include Lato700n(14px);
+        }
+
+    }
+
+}
+
+@media (max-width: 1599px) and (min-width: 768px) {
+    
+    .breadcrumb {
+        
+        width: $totalTabletWidth;
+
+        &_left_title {
+            padding-left: 15px;
+        }
+
+        &_right_title {
+            padding-right: 23px;
+        }
+
+    }
+
+}
+
+@media (max-width: 767px) and (min-width: 375px) {
+
+    .breadcrumb {
+        
+        width: $totalPhoneWidth;
+        flex-direction: column;
+        align-items: center;
+
+        &_left_title {
+            padding-top: 24px;
+            padding-left: 0px;
+            padding-bottom: 31px;
+        }
+
+        &_right_title {
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-bottom: 46px;
+        }
+
+    }
+
+    .no_right_title {
+        padding-top: 50px;
+        padding-left: 15px;
+        padding-bottom: 70px;
+
+        &_for_registration {
+            padding-top: 60px;
+            padding-left: 0px;
+            padding-bottom: 60px;
+        }
+    
+
+    }
+
+
+}
+
+
+

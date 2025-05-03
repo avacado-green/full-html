@@ -1,0 +1,103 @@
+.feature {
+
+    width: $totalWidth;
+    margin: 0px auto;
+    background-color: $contentColor2;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    &-item {
+
+        width: 360px;
+        margin: 103px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        &__header {
+            margin-top: 28px;
+            margin-bottom: 16px;
+            color: $contentColor3;
+            font-family: Lato;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        
+        &__text {
+            color: $contentColor3;
+            text-align: center;
+            font-family: Lato;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+    }
+
+}
+
+@media (max-width: 1599px) and (min-width: 768px) {
+
+    .feature {
+
+		width: $totalTabletWidth;
+		margin: 0px auto;
+        padding-top: 48px;
+        padding-bottom: 53px;
+		background-color: #222224;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+        gap: 48px;
+
+        &-item {
+            width: 360px;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+	}
+
+}
+
+@media (max-width: 767px) and (min-width: 375px) {
+
+    .feature {
+
+		width: $totalPhoneWidth;
+		margin: 0px auto;
+		padding-top: 48px;
+		padding-bottom: 81px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+        gap: 38px;
+
+        &-item {
+            width: 360px;
+            margin: 0px auto 0px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__header {
+                margin-bottom: 14px;
+            }
+
+            &__text {
+                padding-left: 30px;
+                padding-right: 30px;
+                // letter-spacing: 1px;
+            }
+        }
+
+	}
+
+}

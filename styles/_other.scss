@@ -1,0 +1,43 @@
+.blank128 {
+    height: 128px;
+}
+
+.blank132 {
+    height: 132px;
+}
+
+.margin_top_none {
+    margin-top: 0px;
+}
+
+@media (max-width: 1599px) and (min-width: 768px) {
+    
+    .blank132 {
+        height: 80px;
+    }
+
+    .hideontablet {
+        display: none;
+    }
+
+}
+
+@media (max-width: 767px) and (min-width: 375px) {
+    
+    .blank132 {
+        height: 81px;
+    }
+
+    .blank128 {
+        height: 60px;
+    }
+
+    .hideonphone {
+        display: none;
+    }
+
+    .cards_custom_gap {
+        gap: 0px;
+    }
+
+}

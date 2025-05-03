@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '../fonts/Lato';
+    src: url('Lato-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@mixin Lato300n($size, $line-height: normal) {
+    font-family: Lato;
+    font-size: $size;
+    font-style: normal;
+    font-weight: 300;
+    line-height: $line-height;
+}
+
+@mixin Lato400n($size, $line-height: normal) {
+    font-family: Lato;
+    font-size: $size;
+    font-style: normal;
+    font-weight: 400;
+    line-height: $line-height;
+}
+
+@mixin Lato600n($size, $line-height: normal) {
+    font-family: Lato;
+    font-size: $size;
+    font-style: normal;
+    font-weight: 600;
+    line-height: $line-height;
+}
+
+@mixin Lato700n($size, $line-height: normal) {
+    font-family: Lato;
+    font-size: $size;
+    font-style: normal;
+    font-weight: 700;
+    line-height: $line-height;
+}
+
+@mixin Lato900n($size, $line-height: normal) {
+    font-family: Lato;
+    font-size: $size;
+    font-style: normal;
+    font-weight: 900;
+    line-height: $line-height;
+}

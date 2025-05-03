@@ -1,0 +1,237 @@
+.subscribe {
+
+    width: $totalWidth;
+    height: 447px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &-background {
+        width: 100%;
+        height: 100%;
+        opacity: 30%;
+        background-color: $contentColor3;
+        position: absolute;
+        z-index: -1;
+    }
+    
+    &-info {
+
+        width: 360px;
+        margin-top: 97px;
+        margin-bottom: 126px;
+        margin-left: 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__image {
+            margin-right: 16px;
+            width: 96px;
+            height: 96px;
+        }
+        
+        &_text {
+            margin-top: 30px;
+            height: 99px;
+            color: $contentColor7;
+            text-align: center;
+            @include Lato400n(20px);
+        }
+        
+        &_text__italic {
+            font-style: italic;
+        }
+
+    }
+    
+    &-buttongroup {
+
+        width: 557px;
+        margin-top: 150px;
+        margin-right: 230px;
+        margin-bottom: 156px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_h3 {
+            color: $contentColor2;
+            text-align: center;
+            height: 28px;
+            @include Lato700n(24px, 167.2%);
+        }
+        
+        &_p {
+            color: $contentColor2;
+            @include Lato400n(18px, 167.2%);
+        }
+        
+        &_form {
+            margin-top: 33px;
+            // margin-left: 0px;
+        }
+        
+        &__input {
+            width: 238px;
+            height: 49px;
+            border-radius: 25px 0px 0px 25px;
+            border: none;
+            padding-left: 22px;
+            background-color: $contentColor3;
+            color: $contentColor3;
+            opacity: 0.671;
+            @include Lato400n(14px);
+        }
+        
+        &_button {
+            width: 100px;
+            height: 49px;
+            margin-left: -5px;
+            border-radius: 0px 25px 25px 0px;
+            border: none;
+            background-color: $contentColor1;
+            color: $contentColor3;
+            text-align: center;
+            @include Lato400n(14px);
+        }
+
+    }
+    
+}
+
+
+
+@media (max-width: 1599px) and (min-width: 768px) {
+
+	.subscribe {
+
+		width: $totalTabletWidth;
+        height: auto;
+		margin: 0px auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+        &-info {
+            width: 360px;
+            margin-top: 64px;
+            margin-bottom: 48px;
+            margin-left: 0px;
+            margin-right: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-buttongroup {
+
+            width: 557px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 140px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &_form {
+                margin-top: 22px;
+            }
+
+            &_p {
+                margin-top: 8px;
+            }
+            
+        }
+
+        &-background {
+            /* Не знаю, изображение надо смещать */
+            object-fit: cover;
+            object-position: -380px 0px;
+        }
+
+	}
+
+}
+
+@media (max-width: 767px) and (min-width: 375px) {
+
+	.subscribe {
+
+		width: $totalPhoneWidth;
+        height: auto;
+		margin: 0px auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		position: relative;
+
+        &-background {
+            object-fit: cover;
+            object-position: -430px 0px;
+            z-index: -1;
+        }
+    
+        &-info {
+            width: 360px;
+            margin-top: 63px;
+            margin-bottom: 32px;
+            margin-left: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &_text {
+                margin-top: 30px;
+                padding-left: 19px;
+                @include Lato400n(18px);
+            }
+    
+            &__image {
+                margin-right: 0px;
+                width: 91px;
+                height: 92px;
+            }
+            
+        }
+    
+    
+        &-buttongroup {
+
+            width: 375px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 110px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &_h3 {
+                height: 33px;
+            }
+
+            &_p {
+                font-size: 14px;
+            }
+        
+            &_form {
+                margin-top: 20px;
+            }
+        
+            &__input {
+                width: 218px;
+                height: 48px;
+            }
+        
+            &_button {
+                width: 95px;
+                height: 48px;
+                margin-left: 0px;
+            }
+
+        }
+    
+	}
+
+}

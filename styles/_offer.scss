@@ -1,0 +1,139 @@
+.offer {
+
+    width: 1140px;
+    margin: 65px auto 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    &_for_men_background {
+        width: 360px;
+        height: 260px;
+        background-image: url(../img/offer_for_men.webp);
+    }
+    
+    &_for_women_background {
+        width: 360px;
+        height: 260px;
+        background-image: url(../img/offer_for_women.webp);
+    }
+    
+    &_for_kids_background {
+        width: 360px;
+        height: 260px;
+        background-image: url(../img/offer_for_kids.webp);
+    }
+    
+    &_accesories_background {
+        width: 1140px;
+        height: 180px;
+        background-image: url(../img/offer-accesories.webp);
+    }
+
+    &_header3 {
+        color: $contentColor1;
+        @include Lato700n(24px);
+        
+    }
+    
+    &_header4 {
+        color: $contentColor3;
+        text-align: center;
+        @include Lato400n(16px);
+    }
+
+}
+
+.filler {
+    background-color: rgba(33, 22, 22, 0.7);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1599px) and (min-width: 768px) {
+
+	.offer {
+
+		width: $totalTabletWidth;
+		margin: 19px auto 0px;
+		gap: 20px;
+
+        &_for_men_background {
+            width: 232px;
+            height: 168px;
+            background-size: contain;
+        }
+    
+        &_for_women_background {
+            width: 232px;
+            height: 168px;
+            background-size: contain;
+        }
+    
+        &_for_kids_background {
+            width: 232px;
+            height: 168px;
+            background-size: contain;
+        }
+    
+        &_accesories_background {
+            width: 735px;
+            height: 116px;
+            background-size: contain;
+        }
+
+        &_header4 {
+            margin-bottom: 2px;
+        }
+
+	}
+
+}
+
+@media (max-width: 767px) and (min-width: 375px) {
+
+    .offer {
+
+		width: $totalPhoneWidth;
+		gap: 33px;
+
+        &_for_men_background {
+            width: 343px;
+            height: 247px;
+            background-position: center;
+            background-size: cover;
+        }
+    
+        &_for_women_background {
+            width: 343px;
+            height: 247px;
+            background-position: center;
+            background-size: cover;
+        }
+    
+        &_for_kids_background {
+            width: 343px;
+            height: 247px;
+            background-position: center;
+            background-size: cover;
+        }
+    
+        &_accesories_background {
+            width: 343px;
+            height: 111px;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &_header4 {
+            margin-bottom: 2px;
+        }
+
+	}
+
+}

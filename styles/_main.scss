@@ -1,0 +1,149 @@
+.main {
+
+    &_logo {
+        width: $totalWidth;
+        margin: 0px auto;
+        background-color: $contentColor4;
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+
+        &_header1 {
+            color: $contentColor2;
+            @include Lato900n(48px);
+        }
+    
+        &_header2 {
+            color: $contentColor2;
+            @include Lato700n(32px);
+        }
+    
+        &_span {
+            color: $contentColor1;
+        }
+
+        img {
+            background-color: $contentColor3;
+        }
+
+    }
+
+    &-menu {
+        width: 232px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: $contentColor3;
+        filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
+        padding: 32px;
+
+        &_header1 {
+            display: block;
+            margin-bottom: 24px;
+            color: $contentColor5;
+            @include Lato700n(14px);
+            
+        }
+    
+        &_header2 {
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            color: $contentColor1;
+            @include Lato400n(14px);
+        }
+    
+        &_item {
+            display: block;
+            margin-left: 22px;
+            margin-top: 11px;
+            margin-bottom: 11px;
+            color: $contentColor1;
+            @include Lato400n(14px);
+        }
+    
+    }
+
+    &_banner {
+        margin: 290px 331px 381px 63px;
+        border-left: 12px solid $contentColor1;
+        padding-left: 16px;
+    }
+
+}
+
+@media (max-width: 1599px) and (min-width: 768px) {
+    
+    .main {
+
+        &_logo {
+
+            width: $totalTabletWidth;
+            margin: 0px auto;
+
+            &_header1 {
+                color: #222;
+                font-family: Lato;
+                font-size: 44px;
+            }
+        
+            &_header2 {
+                font-size: 24px;
+            }
+        
+            &_span {
+                color: #f16d7f;
+            }
+
+            img {
+                width: 386px;
+                height: 368px;
+            }
+     
+        }
+   
+        &_banner {
+            margin: 138px 0px auto 39px;
+            height: 92px;
+            border-left: 12px solid #f16d7f;
+            padding-left: 16px;
+        }
+    
+    }
+    
+}
+
+@media (max-width: 767px) and (min-width: 375px) {
+    
+    .main {
+
+        &_banner {
+            margin: 148px 56px 152px auto;
+            padding-left: 18px;
+        }
+
+        &_logo {
+
+            width: $totalPhoneWidth;
+
+            &_header1 {
+                font-size: 38px;
+                letter-spacing: 0.5px;
+            }
+        
+            &_header2 {
+                font-size: 20px;
+                line-height: 13px;
+                margin-bottom: 2px;
+            }
+        
+            &_span {
+                // color: #f16d7f;
+                letter-spacing: 0px;
+            }
+    
+        }
+
+    }
+
+}

@@ -1,0 +1,331 @@
+.catalog_container {
+    position: relative;
+    width: $totalWidth;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+}
+
+.filter {
+    position: absolute;
+    width: $totalWidth1;
+    margin-top: 37px;
+    margin-left: 215px;
+    display: flex;
+    z-index: 1;
+
+    &_left {
+        width: 380px;
+        padding-left: 18px;
+        
+        
+        &_details {
+            width: 360px;
+
+            &[open] {
+                box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+            }
+
+        }
+
+        &_summary {
+            display: flex;
+            padding-top: 13px;
+            padding-left: 16px;
+            padding-bottom: 16px;
+
+            &_text {
+                color: $contentColor7;
+                @include Lato600n(14px);
+            }
+
+            &_logo {
+                margin-top: 5px;
+                margin-left: 11px;
+            }
+
+        }
+
+        &_content {
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 18px;
+            background-color: $contentColor3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 15px;
+
+            &_summary {
+                display: flex;
+                padding-top: 9px;
+                padding-bottom: 11px;
+                padding-left: 11px;
+                border-left: 5px solid $contentColor1;
+                border-bottom: 1px solid #EBEBEB;
+                color: $contentColor7;
+                @include Lato400n(14px);
+
+                &::marker {
+                    display: none;
+                }
+                
+            }
+
+            &_items {
+                margin-top: 24px;
+                margin-bottom: 9px;
+                margin-left: 15px;
+                // margin: 24px 16px;
+                display: flex;
+                flex-direction: column;
+                justify-content:space-between;
+                gap: 10.5px;
+
+            }
+
+            &_item {
+                color: $contentColor7;
+                @include Lato400n(14px);
+            }
+
+        }
+    }
+
+    &_right {
+        display: flex;
+
+        &_trending {
+            width: 160px;
+        }
+
+        &_size {
+            width: 75px;
+        }
+
+        &_price {
+            width: 80px;
+        }
+        
+        &_details {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+
+            &[open] {
+                box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+            }
+
+        }
+
+        &_summary {
+            display: flex;
+            padding-top: 13px;
+            padding-left: 10px;
+            padding-right: 0px;
+            
+            &_text {
+                @include Lato400n(14px);
+                color: $contentColor7;
+            }
+
+            &_logo {
+                margin-top: 7px;
+                margin-left: 10px;                    
+            }
+        }
+
+        &_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 6px;
+            padding-top: 11px;
+            padding-bottom: 11px;
+
+            &_checkbox {
+
+                -moz-appearance:none;
+                -webkit-appearance:none;
+                -o-appearance:none;
+                width: 13px;
+                height: 13px;
+                border: 1px solid #EBEBEB;
+                margin: auto 9px;
+
+                &_label {
+                    @include Lato400n(14px);
+                    color: $contentColor7;
+                }
+
+                &_container {
+                    display: flex;
+                }
+            }
+        }
+
+    }
+}
+
+.filter_left_details[open] summary p {
+    color: $contentColor1;
+}
+
+.filter_left_details[open] summary svg path {
+    fill: $contentColor1;
+}
+
+.filter_left_content_details[open] summary {
+    color: $contentColor1;
+}
+
+.catalog_pagination {
+    height: 134px;
+    padding-top: 48px;
+    padding-right: 26px;
+
+    &_element {
+        width: 284px;
+        height: 43px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #EBEBEB;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &_num {
+            color: $contentColor7;
+            @include Lato300n(16px);
+
+            &_selected {
+                color: $contentColor1;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1599px) and (min-width: 768px) {
+
+    .catalog_container {
+        width: $totalTabletWidth;
+    }
+
+    .filter {
+        width: $totalTabletWidth;
+        margin-top: 9px;
+        margin-left: 0px;
+        
+        &_left {
+
+            padding-left: 0px;
+
+            &_details {
+                width: 360px;
+            }
+            
+        }
+
+        &_right {
+
+            padding-left: 67px;
+    
+        }
+
+
+    }
+
+    .catalog_pagination {
+
+        height: 107px;
+        padding-top: 40px;
+        padding-right: 0px;
+    
+        &_element {
+            width: 280px;
+            height: 43px;
+            margin-left: 254px;
+        }
+    
+    }
+
+}
+
+@media (max-width: 767px) and (min-width: 375px) {
+    
+    .catalog_container {
+        width: $totalPhoneWidth;
+    }
+
+    .filter {
+        width: $totalPhoneWidth;
+        margin-top: 9px;
+        margin-left: 0px;
+        
+        &_left {
+
+            padding-left: 0px;
+
+            &_details {
+                width: auto;
+            }
+
+            &_summary_logo {
+                margin-top: 9px;
+                margin-left: 2px;
+                scale: 2.5;
+            }
+            
+        }
+
+        &_right {
+
+            padding-left: auto;
+
+            &_summary {
+                padding-top: 15px;
+                padding-left: 8px;
+                
+                &_text {
+                    @include Lato400n(12px);
+                }
+    
+                &_logo {
+                    margin-top: 4px;
+                    margin-left: 10px;                    
+                }
+            }
+
+            &_trending {
+                width: 139px;
+            }
+    
+            &_size {
+                width: 68px;
+            }
+    
+            &_price {
+                width: 69px;
+            }
+    
+        }
+
+
+    }
+
+    .catalog_pagination {
+
+        height: 107px;
+        padding-top: 40px;
+        padding-right: 0px;
+    
+        &_element {
+            width: 282px;
+            height: 43px;
+            margin-left: 45px;
+        }
+    
+    }
+    
+}

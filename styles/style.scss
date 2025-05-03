@@ -1,0 +1,30 @@
+@import 'vars';
+
+@import 'fonts';
+
+@import 'header';
+@import 'main';
+@import 'offer';
+@import 'products';
+@import 'feauture';
+@import 'subscribe';
+@import 'footer';
+@import 'breadcrumb';
+@import 'imageslide';
+@import 'productdescription';
+@import 'filter';
+@import 'cart';
+@import 'registration';
+
+@import 'other';
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.body {
+    scroll-behavior: smooth;
+    background: $contentColor1;
+}
